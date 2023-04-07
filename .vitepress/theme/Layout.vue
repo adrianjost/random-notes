@@ -8,54 +8,68 @@ const { page, frontmatter } = useData();
 </script>
 
 <template>
-  <div
-    class="antialiased dark:bg-slate-900"
-    style="min-height: 100vh; min-height: 100dvh"
-  >
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-      <nav class="flex justify-between items-center py-10 font-bold">
-        <a class="text-xl" href="/" aria-label="Random Notes">
-          <img
-            class="inline-block mr-2"
-            style="width: 36px; height: 31px"
-            alt="logo"
-            src="/logo.svg"
-          />
-          <span
-            v-if="!frontmatter.index"
-            class="hidden md:inline dark:text-white"
-            >Random Notes</span
-          >
+  <div>
+    <nav class="container-fluid">
+      <a href="/" class="secondary home" aria-label="Random Notes">
+        <img
+          style="width: 36px; height: 31px"
+          role="presentation"
+          src="/logo.svg"
+        />
+        <b v-if="!frontmatter.index">Random Notes</b>
+      </a>
+      <small class="nav-items">
+        <a
+          class="secondary"
+          :href="`https://github.com/adrianjost/random-notes/tree/main/${page.relativePath}`"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub Source
         </a>
-        <div class="text-sm text-gray-500 dark:text-white leading-5">
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://github.com/adrianjost/random-notes"
-            target="_blank"
-            rel="noopener"
-            ><span class="hidden sm:inline">GitHub </span>Source</a
-          >
-          <span class="mr-2 ml-2">·</span>
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="/feed.rss"
-            >RSS<span class="hidden sm:inline"> Feed</span></a
-          >
-          <span class="mr-2 ml-2">·</span>
-          <a
-            class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://adrianjost.dev"
-            target="_blank"
-            rel="noopener"
-            >Homepage →</a
-          >
-        </div>
-      </nav>
-    </div>
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <span class="spacer">•</span>
+        <a class="secondary" href="/feed.rss">RSS Feed</a>
+        <span class="spacer">•</span>
+        <a
+          class="secondary"
+          href="https://adrianjost.dev"
+          target="_blank"
+          rel="noopener"
+        >
+          Homepage →
+        </a>
+      </small>
+    </nav>
+    <main>
       <Home v-if="frontmatter.index" />
       <NotFound v-else-if="page.isNotFound" />
       <Article v-else />
     </main>
   </div>
 </template>
+<style scoped>
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 1024px;
+}
+nav a {
+  text-decoration: none;
+  border-radius: 0.25rem;
+  padding: 0.5em;
+}
+nav a.home {
+  display: flex;
+  align-items: center;
+  color: var(--h2-color) !important;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items .spacer {
+  margin: 0 calc(var(--nav-link-spacing-horizontal) / 2);
+}
+</style>

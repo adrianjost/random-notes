@@ -7,42 +7,56 @@ const { frontmatter } = useData();
 </script>
 
 <template>
-  <div class="divide-y divide-gray-200 dark:divide-slate-200/5">
-    <div class="pt-6 pb-8 space-y-2 md:space-y-5">
-      <h1
-        class="text-3xl leading-9 font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
-      >
+  <main>
+    <header>
+      <h1>
         {{ frontmatter.title }}
       </h1>
-      <p class="text-lg leading-7 text-gray-500 dark:text-white">
+      <p>
         {{ frontmatter.subtext }}
       </p>
-    </div>
-    <ul class="divide-y divide-gray-200 dark:divide-slate-200/5">
-      <li class="py-12" v-for="{ title, url, date, excerpt } of posts">
-        <article
-          class="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline"
-        >
+    </header>
+
+    <article v-for="{ title, url, date, excerpt } of posts" :key="url">
+      <div>
+        <div>
           <Date :date="date" />
-          <div class="space-y-5 xl:col-span-3">
-            <div class="space-y-6">
-              <h2 class="text-2xl leading-8 font-bold tracking-tight">
-                <a class="text-gray-900 dark:text-white" :href="url">{{
-                  title
-                }}</a>
-              </h2>
-              <div
-                v-if="excerpt"
-                class="prose dark:prose-invert max-w-none text-gray-500 dark:text-gray-300"
-                v-html="excerpt"
-              ></div>
-            </div>
-            <div class="text-base leading-6 font-medium">
-              <a class="link" aria-label="read more" :href="url">Read more →</a>
-            </div>
-          </div>
-        </article>
-      </li>
-    </ul>
-  </div>
+          <h2>
+            <a :href="url">{{ title }}</a>
+          </h2>
+          <div v-if="excerpt" v-html="excerpt"></div>
+        </div>
+        <div>
+          <a aria-label="read more" :href="url">Read more →</a>
+        </div>
+      </div>
+    </article>
+  </main>
 </template>
+<style scoped>
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  margin-top: 0 !important;
+}
+a {
+  display: inline-block;
+  margin: -0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+h2 a {
+  color: inherit !important;
+}
+article {
+  padding: 2rem 0;
+  border-top: 1px solid var(--muted-color);
+}
+</style>

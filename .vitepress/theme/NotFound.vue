@@ -1,3 +1,8 @@
 <template>
-  <h1 class="text-3xl font-bold">404 Page Not Found</h1>
+  <h1>404 Page Not Found</h1>
 </template>
+<style scoped>
+h1 {
+  text-align: center;
+}
+</style>

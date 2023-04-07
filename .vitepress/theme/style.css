@@ -1,126 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --c-brand: #df123b;
-  --c-brand-light: #ff325b;
+body {
+  --primary: #1e88e5;
+  --primary-hover: #ff1644;
+  --primary-focus: #1e88e522;
 }
 
-nav img {
-  vertical-align: middle;
+hr {
+  margin: var(--block-spacing-vertical) 0;
 }
 
-p img {
-  margin: 0px auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --typography-spacing-vertical: 0.5em !important;
+  margin-top: var(--typography-spacing-vertical) !important;
+  margin-bottom: calc(var(--typography-spacing-vertical) / 2) !important;
+  line-height: 125%;
 }
 
-.prose hr {
-  border-top: 1px solid #e5e7eb;
+h1 {
+  --font-size: 2.25rem !important;
+}
+h2 {
+  --font-size: 1.75rem !important;
+}
+h3 {
+  --font-size: 1.25rem !important;
+}
+h4 {
+  --font-size: 1.125rem !important;
+}
+h5 {
+  --font-size: 1rem !important;
+  font-weight: 900;
+}
+h6 {
+  --font-size: 0.875rem !important;
+  font-weight: 600;
 }
 
-.link {
-  color: var(--c-brand);
+article img {
+  max-width: 100%;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
 }
-
-.link:hover {
-  color: var(--c-brand-light);
+article a {
+  display: inline-block;
+  margin: -0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
 }
-
-.header-anchor {
-  display: none;
-}
-
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML.
- * Based on https://github.com/chriskempson/tomorrow-theme
- *
- * @author Rose Pritchard
- */
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #999;
-}
-
-.token.punctuation {
-  color: #ccc;
-}
-
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-  color: #e2777a;
-}
-
-.token.function-name {
-  color: #6196cc;
-}
-
-.token.boolean,
-.token.number,
-.token.function {
-  color: #f08d49;
-}
-
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
-  color: #f8c555;
-}
-
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: #cc99cd;
-}
-
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-  color: #7ec699;
-}
-
-.token.operator,
-.token.entity,
-.token.url {
-  color: #67cdcc;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.inserted {
-  color: #67cdcc;
-}
-
-button.copy {
-  display: none;
-}
-
-span.lang {
-  position: absolute;
-  right: 0.5em;
-  font-size: 0.75em;
-  color: #999;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+article code {
+  display: inline-block;
+  margin: 0 -0.1rem;
+  padding: 0 0.1rem;
+  border-radius: 0.25rem;
+  background: var(--muted-border-color);
 }
