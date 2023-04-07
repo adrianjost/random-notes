@@ -21,15 +21,6 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
 
 <template>
   <article class="xl:divide-y xl:divide-gray-200 dark:xl:divide-slate-200/5">
-    <header class="pt-6 xl:pb-10 space-y-1 text-center">
-      <Date :date="date" />
-      <h1
-        class="text-3xl leading-9 font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
-      >
-        {{ data.title }}
-      </h1>
-    </header>
-
     <div
       class="divide-y xl:divide-y-0 divide-gray-200 dark:divide-slate-200/5 xl:grid xl:grid-cols-4 xl:gap-x-10 pb-16 xl:pb-20"
       style="grid-template-rows: auto 1fr"
@@ -38,7 +29,15 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1]);
       <div
         class="divide-y divide-gray-200 dark:divide-slate-200/5 xl:pb-0 xl:col-span-3 xl:row-span-2"
       >
-        <Content class="prose dark:prose-invert max-w-none pt-10 pb-8" />
+        <header class="pt-10 space-y-1">
+          <h1
+            class="text-3xl leading-9 font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+          >
+            {{ data.title }}
+          </h1>
+          <Date :date="date" class="py-4" />
+        </header>
+        <Content class="prose dark:prose-invert max-w-none pb-8" />
       </div>
 
       <footer
