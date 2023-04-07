@@ -2,8 +2,7 @@ import path from "path";
 import { writeFileSync } from "fs";
 import { Feed } from "feed";
 import { createContentLoader, type SiteConfig } from "vitepress";
-
-const baseUrl = `https://notes.adrianjost.dev`;
+import { baseUrl, logoUrl } from "./settings";
 
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
@@ -12,8 +11,8 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: "en",
-    image: "https://adrianjost.dev/_nuxt/img/avatar.04728df.svg", // TODO replace with logo and local file
-    favicon: `${baseUrl}/logo.svg`,
+    image: logoUrl,
+    favicon: logoUrl,
     copyright: "Copyright (c) 2021-present, Adrian Jost"
   });
 
