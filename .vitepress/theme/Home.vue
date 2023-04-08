@@ -19,7 +19,7 @@ const { frontmatter } = useData();
   <article v-for="{ title, url, date, excerpt } of posts" :key="url">
     <div>
       <div>
-        <Date :date="date" style="font-weight: 200" />
+        <Date :date="date" />
         <h2>
           <a :href="url">{{ title }}</a>
         </h2>
