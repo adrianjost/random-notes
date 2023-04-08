@@ -42,6 +42,7 @@ const date = computed(() => posts[findCurrentIndex()].date);
 </template>
 <style scoped>
 header {
+  margin-top: var(--block-spacing-vertical);
   margin-bottom: var(--block-spacing-vertical);
 }
 header h1 {
