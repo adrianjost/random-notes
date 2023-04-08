@@ -4,7 +4,7 @@ import { computed } from "vue";
 import { useData, useRoute } from "vitepress";
 import { data as posts } from "./posts.data.js";
 
-const { frontmatter: data } = useData();
+const { frontmatter: data, page } = useData();
 
 const route = useRoute();
 
@@ -17,7 +17,7 @@ const date = computed(() => posts[findCurrentIndex()].date);
 </script>
 
 <template>
-  <article class="container">
+  <article>
     <div style="grid-template-rows: auto 1fr">
       <header>
         <Date :date="date" />
@@ -28,6 +28,14 @@ const date = computed(() => posts[findCurrentIndex()].date);
       <Content />
       <footer>
         <a href="/">← Go back</a>
+        <a
+          class="secondary"
+          :href="`https://github.com/adrianjost/random-notes/tree/main/${page.relativePath}`"
+          target="_blank"
+          rel="noopener"
+        >
+          View GitHub Source
+        </a>
       </footer>
     </div>
   </article>
@@ -40,9 +48,12 @@ header h1 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-article {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
 }
 </style>

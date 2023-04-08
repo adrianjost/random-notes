@@ -19,15 +19,6 @@ const { page, frontmatter } = useData();
         <b v-if="!frontmatter.index">Random Notes</b>
       </a>
       <small class="nav-items">
-        <a
-          class="secondary"
-          :href="`https://github.com/adrianjost/random-notes/tree/main/${page.relativePath}`"
-          target="_blank"
-          rel="noopener"
-        >
-          GitHub Source
-        </a>
-        <span class="spacer">•</span>
         <a class="secondary" href="/feed.rss">RSS Feed</a>
         <span class="spacer">•</span>
         <a
@@ -36,7 +27,7 @@ const { page, frontmatter } = useData();
           target="_blank"
           rel="noopener"
         >
-          Homepage →
+          Homepage
         </a>
       </small>
     </nav>
@@ -71,5 +62,21 @@ nav a.home {
 }
 .nav-items .spacer {
   margin: 0 calc(var(--nav-link-spacing-horizontal) / 2);
+}
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 576px) {
+  .nav-items {
+    display: none;
+  }
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 </style>
