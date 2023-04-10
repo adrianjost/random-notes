@@ -13,7 +13,7 @@ export async function genFeed(config: SiteConfig) {
     language: "en",
     image: logoUrl,
     favicon: logoUrl,
-    copyright: "Copyright (c) 2021-present, Adrian Jost"
+    copyright: "Copyright (c), Adrian Jost"
   });
 
   const posts = await createContentLoader("posts/*.md", {

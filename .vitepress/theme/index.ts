@@ -1,6 +1,5 @@
-import Layout from "./Layout.vue";
 import "./style.css";
-import "@picocss/pico/css/pico.slim.css";
+import Layout from "./Layout.vue";
 
 export default {
   Layout

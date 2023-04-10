@@ -20,16 +20,16 @@ const date = computed(() => posts[findCurrentIndex()].date);
   <article>
     <div style="grid-template-rows: auto 1fr">
       <header>
-        <Date :date="date" />
         <h1>
           {{ data.title }}
         </h1>
+        <Date :date="date" />
       </header>
-      <Content />
+      <Content class="content" />
       <footer>
         <a href="/">← Go back</a>
         <a
-          class="secondary"
+          class="link-muted"
           :href="`https://github.com/adrianjost/random-notes/tree/main/${page.relativePath}`"
           target="_blank"
           rel="noopener"
@@ -53,8 +53,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-footer a {
-  text-decoration: none;
 }
 </style>

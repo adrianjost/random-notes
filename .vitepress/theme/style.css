@@ -1,63 +1,219 @@
+/* configuration */
+:root {
+  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-size: 16px;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  --color-background: #fff;
+  --color-text: #333;
+  --color-link: #1e88e5;
+  --color-link-hover: #1e88e5;
+  --color-link-hover-background: #0e64af21;
+  --color-divider: #596b78;
+  --color-link-muted: #596b78;
+
+  --typography-spacing-vertical: 0.5em;
+  --block-spacing-vertical: 1.5em;
+
+  --rounding: 0.5rem;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1e1e1e;
+    --color-text: #fff;
+    --color-link: #1e88e5;
+    --color-link-hover: #ff1644;
+    --color-link-hover-background: #ff164422;
+  }
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* screen size typo scale */
+@media (min-width: 576px) {
+  :root {
+    --font-size: 17px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --font-size: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 20px;
+  }
+}
+
+/* styles */
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
 body {
-  --primary: #1e88e5;
-  --primary-hover: #ff1644;
-  --primary-focus: #1e88e522;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-hr {
-  margin: var(--block-spacing-vertical) 0;
+/* Layout */
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
 }
 
+/* Headlines */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  --typography-spacing-vertical: 0.5em !important;
-  margin-top: var(--typography-spacing-vertical) !important;
-  margin-bottom: calc(var(--typography-spacing-vertical) / 2) !important;
+  font-size: var(--font-size);
+  margin-top: var(--block-spacing-vertical);
+  margin-bottom: var(--typography-spacing-vertical);
   line-height: 125%;
+}
+h1 + h2,
+h2 + h2,
+h2 + h3,
+h3 + h3,
+h3 + h4,
+h4 + h4,
+h4 + h5,
+h5 + h5,
+h5 + h6,
+h6 + h6 {
+  margin-top: 0;
 }
 
 h1 {
-  --font-size: 2.25rem !important;
+  --font-size: 2.25rem;
 }
 h2 {
-  --font-size: 1.75rem !important;
+  --font-size: 1.75rem;
 }
 h3 {
-  --font-size: 1.25rem !important;
+  --font-size: 1.25rem;
 }
 h4 {
-  --font-size: 1.125rem !important;
+  --font-size: 1.125rem;
 }
 h5 {
-  --font-size: 1rem !important;
+  --font-size: 1rem;
   font-weight: 900;
 }
 h6 {
-  --font-size: 0.875rem !important;
+  --font-size: 0.875rem;
+  font-weight: 600;
+}
+small {
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
-article img {
+/* Links */
+a {
+  color: var(--color-link);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  color: var(--color-link-hover);
+  background-color: var(--color-link-hover-background);
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout */
+hr {
+  margin: var(--block-spacing-vertical) 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--block-spacing-vertical);
+}
+
+/* Content*/
+.content img {
   max-width: 100%;
-  border-radius: 0.25rem;
+  border-radius: var(--rounding);
   width: 100%;
   height: auto;
   padding: 0.5rem 0;
 }
-article a {
+.content a {
   display: inline-block;
-  margin: -0.25rem;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  margin: calc(-1 * var(--rounding));
+  padding: var(--rounding);
+  border-radius: var(--rounding);
+  text-decoration: underline;
 }
-article code {
+.content code {
   display: inline-block;
   margin: 0 -0.1rem;
   padding: 0 0.1rem;
-  border-radius: 0.25rem;
+  border-radius: var(--rounding);
   background: var(--muted-border-color);
+}
+
+/* Utilities */
+.link-muted {
+  color: var(--color-link-muted);
+  text-decoration: none;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }

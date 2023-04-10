@@ -8,34 +8,29 @@ const { frontmatter } = useData();
 
 <template>
   <header>
-    <h1>
+    <h1 class="title">
       {{ frontmatter.title }}
     </h1>
-    <p style="color: var(--muted-color)">
+    <p style="color: var(--color-divider)">
       {{ frontmatter.subtext }}
     </p>
   </header>
 
   <article v-for="{ title, url, date, excerpt } of posts" :key="url">
-    <div>
-      <div>
-        <Date :date="date" />
-        <h2>
-          <a :href="url">{{ title }}</a>
-        </h2>
-        <div v-if="excerpt" v-html="excerpt"></div>
-      </div>
-      <div>
-        <a aria-label="read more" :href="url">Read more →</a>
-      </div>
-    </div>
+    <Date :date="date" />
+    <h2>
+      <a :href="url">{{ title }}</a>
+    </h2>
+    <div v-if="excerpt" class="excerpt" v-html="excerpt"></div>
+    <a aria-label="read more" :href="url">Read more →</a>
   </article>
 </template>
 <style scoped>
 h1 {
   font-size: 2rem;
   font-weight: 900;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
+  margin-top: calc(var(--block-spacing-vertical) / 3);
 }
 @media (min-width: 576px) {
   h1 {
@@ -45,21 +40,22 @@ h1 {
     padding: 2rem;
   }
 }
+
 h2 {
   margin-top: 0 !important;
 }
-a {
-  display: inline-block;
-  margin: -0.25rem;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+h2 > a:hover {
+  text-decoration: underline;
+  color: inherit;
+  background-color: inherit;
 }
-h2 a {
-  color: inherit !important;
+.excerpt:deep() p {
+  margin-top: 0;
+  margin-bottom: var(--typography-spacing-vertical);
 }
 article {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid var(--muted-color);
+  padding-top: var(--block-spacing-vertical);
+  padding-bottom: var(--block-spacing-vertical);
+  border-top: 1px solid var(--color-divider);
 }
 </style>
