@@ -195,7 +195,17 @@ p {
   margin: 0 -0.1rem;
   padding: 0 0.1rem;
   border-radius: var(--rounding);
-  background: var(--muted-border-color);
+}
+.content figure {
+  margin: var(--block-spacing-vertical) 0;
+  padding: 0;
+}
+.content figure img {
+  margin: 0;
+  padding: 0;
+}
+.content figure figcaption {
+  font-style: italic;
 }
 
 /* Utilities */

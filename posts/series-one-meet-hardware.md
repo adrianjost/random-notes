@@ -55,6 +55,19 @@ The final puzzle piece was to disable showing the LG Logo on every startup and s
 
 To disable the Logo, we had to go to a video source that provided some sound and smash the mute button on the remote approximately 10 times. Then a hidden menu would appear where the Logo could be disabled.
 
+<figure>
+<img width="961" alt="hidden tv menu" src="https://user-images.githubusercontent.com/22987140/230942239-48ab4413-1227-41a5-876f-cecd762b209e.png">
+<figcaption>
+    Solution and screenshot are 
+    <a href="https://www.reddit.com/r/LGOLED/comments/q1wyyd/cant_get_into_mute_menu_anyone_else/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    from this Reddit Thread
+    </a>.
+  </figcaption>
+</figure>
+
 Now everything worked super fine. The TV would turn on and off automatically before each scheduled meeting or when touching the Management Tablet and the HDMI Signal was always detected. 🎉
 
 #### Google Admin Settings
