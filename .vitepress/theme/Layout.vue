@@ -11,11 +11,11 @@ const { page, frontmatter } = useData();
   <nav>
     <a href="/" class="home link-muted" aria-label="Random Notes">
       <img
-        style="width: 36px; height: 31px"
+        style="width: 36px; height: 36px"
         role="presentation"
         src="/logo.svg"
       />
-      <b v-if="!frontmatter.home">Random Notes</b>
+      <b v-if="!frontmatter.home" style="margin-left: 0.5rem">Random Notes</b>
     </a>
     <a class="link-muted" href="/feed.rss">
       <small> RSS Feed </small>
@@ -50,7 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   max-width: 1024px;
 }
 nav a {
@@ -58,6 +58,7 @@ nav a {
   text-decoration: none;
   border-radius: var(--rounding);
   padding: var(--rounding);
+  margin: calc(-1 * var(--rounding));
 }
 nav a.home {
   display: flex;
