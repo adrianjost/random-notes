@@ -34,7 +34,7 @@ const date = computed(() => posts[findCurrentIndex()].date);
           target="_blank"
           rel="noopener"
         >
-          View GitHub Source
+          <small>View GitHub Source</small>
         </a>
       </footer>
     </div>
