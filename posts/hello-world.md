@@ -2,7 +2,7 @@
 title: Hello World
 date: 2023-04-06
 author: Adrian Jost
-avatar: https://avatars.githubusercontent.com/u/22987140?v=4
+avatar: https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/25961059712739697731316336689416.png
 web: https://adrianjost.dev
 ---
 

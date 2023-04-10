@@ -2,7 +2,7 @@
 title: 2nd Display on Logitech Tap Large Room Solution for Google Meet
 date: 2023-04-08
 author: Adrian Jost
-avatar: https://avatars.githubusercontent.com/u/22987140?v=4
+avatar: https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/25961059712739697731316336689416.png
 web: https://adrianjost.dev
 ---
 
@@ -13,7 +13,7 @@ How hard can it be, two connect two Displays to hardware that is designed for la
 The Lenovo Series One Meet Hardware for Medium Sized Rooms, we have, has two HDMI Outputs, unfortunately the Chromebox in the Large Room Bundle of Logitech only has one HDMI and one USB-C display output. So we had to find a solution to connect a second display to the Logitech Tap Large Room Kit.
 
 <figure>
-  <img src="https://user-images.githubusercontent.com/22987140/230938909-96e18696-ffba-430a-b2cf-0092ac41b5c3.png" alt="I/O of Logitech Meet Compute Engine" />
+  <img src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/81823812566768657240273891415045.png" alt="I/O of Logitech Meet Compute Engine" />
   <figcaption>
     This is the CTL Meet Compute System GQE15C (For Logitech Google Meet Kits) that is provided with the Large Room Kit.
   <br/>
@@ -31,7 +31,7 @@ I found the `LogiLink USB-Adapter CUA0103`. It advertised CEC compatibility in i
 Then I stumbled over the [Accell](https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled) adapter which claimed full compatibility with "Google Hangouts Meet". Digging deeper showed, that it was designed for a previous iteration of Chromebox ([ASUS Chromebox 3](https://www.gend.co/hangouts-meet-hardware-asus-chromebox)) that also had a USB-C Display output in addition to an anchor screw.
 
 <figure>
-<img width="961" alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://user-images.githubusercontent.com/22987140/230941492-75bdd828-fb04-45a3-9b39-a92aacbd0731.png">
+<img width="961" alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/16193542044723675133134339537122.png">
 <figcaption>
     Screenshot of the 
     <a href="https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled"

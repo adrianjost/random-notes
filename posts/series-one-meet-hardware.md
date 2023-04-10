@@ -2,7 +2,7 @@
 title: Resolving Lenovo Series One Google Meet Hardware Issues
 date: 2023-04-07
 author: Adrian Jost
-avatar: https://avatars.githubusercontent.com/u/22987140?v=4
+avatar: https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/25961059712739697731316336689416.png
 web: https://adrianjost.dev
 ---
 
@@ -56,7 +56,7 @@ The final puzzle piece was to disable showing the LG Logo on every startup and s
 To disable the Logo, we had to go to a video source that provided some sound and smash the mute button on the remote approximately 10 times. Then a hidden menu would appear where the Logo could be disabled.
 
 <figure>
-<img width="961" alt="hidden tv menu" src="https://user-images.githubusercontent.com/22987140/230942239-48ab4413-1227-41a5-876f-cecd762b209e.png">
+<img width="961" alt="hidden tv menu" src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/24290765511407706253036797135157.png">
 <figcaption>
     Solution and screenshot are 
     <a href="https://www.reddit.com/r/LGOLED/comments/q1wyyd/cant_get_into_mute_menu_anyone_else/"
