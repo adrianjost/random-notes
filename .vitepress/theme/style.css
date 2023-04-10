@@ -8,12 +8,14 @@
   --font-weight: 400;
 
   --color-background: #fff;
-  --color-text: #333;
+  --color-text: #283040;
   --color-link: #1e88e5;
   --color-link-hover: #1e88e5;
   --color-link-hover-background: #0e64af21;
   --color-divider: #596b78;
   --color-link-muted: #596b78;
+
+  --divider-width: 1px;
 
   --typography-spacing-vertical: 0.5em;
   --block-spacing-vertical: 1.5em;
@@ -24,11 +26,17 @@
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #1e1e1e;
-    --color-text: #fff;
+    --color-background: #11191f;
+    --color-text: #edf0f3;
     --color-link: #1e88e5;
-    --color-link-hover: #ff1644;
-    --color-link-hover-background: #ff164422;
+    --color-link-hover: #1e88e5;
+    --color-link-hover-background: #0e64af21;
+    --color-divider: #313b42;
+    --color-link-muted: #a1c1d9;
+    --divider-width: 2px;
+  }
+  img {
+    filter: brightness(0.8);
   }
 }
 
@@ -78,8 +86,8 @@ body {
   font-size: var(--font-size);
   line-height: var(--line-height);
   font-weight: var(--font-weight);
-  color: #333;
-  background-color: #fff;
+  color: var(--color-text);
+  background-color: var(--color-background);
   margin: 0;
   padding: 0;
 }

@@ -11,7 +11,7 @@ const { frontmatter } = useData();
     <h1 class="title">
       {{ frontmatter.title }}
     </h1>
-    <p style="color: var(--color-divider)">
+    <p>
       {{ frontmatter.subtext }}
     </p>
   </header>
@@ -56,6 +56,6 @@ h2 > a:hover {
 article {
   padding-top: var(--block-spacing-vertical);
   padding-bottom: var(--block-spacing-vertical);
-  border-top: 1px solid var(--color-divider);
+  border-top: var(--divider-width) solid var(--color-divider);
 }
 </style>
