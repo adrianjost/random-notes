@@ -59,12 +59,9 @@ To disable the Logo, we had to go to a video source that provided some sound and
 <img alt="hidden tv menu" src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/24290765511407706253036797135157.png">
 <figcaption>
     Solution and screenshot are 
-    <a href="https://www.reddit.com/r/LGOLED/comments/q1wyyd/cant_get_into_mute_menu_anyone_else/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
+    <ALink href="https://www.reddit.com/r/LGOLED/comments/q1wyyd/cant_get_into_mute_menu_anyone_else/">
     from this Reddit Thread
-    </a>.
+    </ALink>.
   </figcaption>
 </figure>
 

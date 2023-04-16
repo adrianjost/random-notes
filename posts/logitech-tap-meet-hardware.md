@@ -17,8 +17,7 @@ The Lenovo Series One Meet Hardware for Medium Sized Rooms, we have, has two HDM
   <figcaption>
     This is the CTL Meet Compute System GQE15C (For Logitech Google Meet Kits) that is provided with the Large Room Kit.
   <br/>
-  image source: <a href="https://ctl.net/products/ctl-meet-compute-system-gqe15c" target="_blank"
-    rel="noopener noreferrer">ctl.net</a>
+  image source: <ALink href="https://ctl.net/products/ctl-meet-compute-system-gqe15c">ctl.net</ALink>
   </figcaption>
 </figure>
 
@@ -34,12 +33,9 @@ Then I stumbled over the [Accell](https://www.accellww.com/products/usb-c-to-hdm
 <img alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/16193542044723675133134339537122.png">
 <figcaption>
     Screenshot of the 
-    <a href="https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
+    <ALink href="https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled">
     Accell Adapter's product page.
-    </a>
+    </ALink>
   </figcaption>
 </figure>
 
