@@ -11,7 +11,7 @@
   --color-text: #283040;
   --color-link: #1e88e5;
   --color-link-hover: #1e88e5;
-  --color-link-hover-background: #0e64af21;
+  --color-link-hover-background: #1e88e517;
   --color-divider: #596b78;
   --color-link-muted: #596b78;
 
@@ -28,9 +28,6 @@
   :root {
     --color-background: #11191f;
     --color-text: #edf0f3;
-    --color-link: #1e88e5;
-    --color-link-hover: #1e88e5;
-    --color-link-hover-background: #0e64af21;
     --color-divider: #313b42;
     --color-link-muted: #a1c1d9;
     --divider-width: 2px;
