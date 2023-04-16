@@ -31,7 +31,7 @@ I found the `LogiLink USB-Adapter CUA0103`. It advertised CEC compatibility in i
 Then I stumbled over the [Accell](https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled) adapter which claimed full compatibility with "Google Hangouts Meet". Digging deeper showed, that it was designed for a previous iteration of Chromebox ([ASUS Chromebox 3](https://www.gend.co/hangouts-meet-hardware-asus-chromebox)) that also had a USB-C Display output in addition to an anchor screw.
 
 <figure>
-<img width="961" alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/16193542044723675133134339537122.png">
+<img alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/16193542044723675133134339537122.png">
 <figcaption>
     Screenshot of the 
     <a href="https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled"

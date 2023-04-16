@@ -56,7 +56,7 @@ The final puzzle piece was to disable showing the LG Logo on every startup and s
 To disable the Logo, we had to go to a video source that provided some sound and smash the mute button on the remote approximately 10 times. Then a hidden menu would appear where the Logo could be disabled.
 
 <figure>
-<img width="961" alt="hidden tv menu" src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/24290765511407706253036797135157.png">
+<img alt="hidden tv menu" src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/24290765511407706253036797135157.png">
 <figcaption>
     Solution and screenshot are 
     <a href="https://www.reddit.com/r/LGOLED/comments/q1wyyd/cant_get_into_mute_menu_anyone_else/"
