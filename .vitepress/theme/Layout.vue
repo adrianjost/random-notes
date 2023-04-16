@@ -15,7 +15,7 @@ const { page, frontmatter } = useData();
         role="presentation"
         src="/logo.svg"
       />
-      <b v-if="!frontmatter.home" style="margin-left: 0.5rem">Random Notes</b>
+      <b v-if="!frontmatter.home" style="margin: 0 0.5rem">Random Notes</b>
     </a>
     <a class="link-muted" href="/feed.rss">
       <small> RSS Feed </small>
