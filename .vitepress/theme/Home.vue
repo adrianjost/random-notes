@@ -44,11 +44,6 @@ h1 {
 h2 {
   margin-top: 0 !important;
 }
-h2 > a:hover {
-  text-decoration: underline;
-  color: inherit;
-  background-color: inherit;
-}
 .excerpt:deep() p {
   margin-top: 0;
   margin-bottom: var(--typography-spacing-vertical);
