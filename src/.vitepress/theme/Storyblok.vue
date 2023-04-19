@@ -5,9 +5,6 @@ import AsyncComponent from "./AsyncComponent.vue";
 // https://vitepress.dev/reference/runtime-api#usedata
 const data = useData();
 const { site, frontmatter, params } = data;
-console.log("Data:", data);
-console.log("Params:", params.value);
-console.log("Frontmatter:", frontmatter.value.metadata);
 </script>
 
 <template>
@@ -19,3 +16,9 @@ console.log("Frontmatter:", frontmatter.value.metadata);
     </article>
   </main>
 </template>
+
+<style scoped>
+main article pre {
+  background-color: pink;
+}
+</style>
