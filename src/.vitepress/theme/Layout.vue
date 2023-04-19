@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Home from "./Home.vue";
+import Storyblok from "./Storyblok.vue";
 import { useData } from "vitepress";
 
 // https://vitepress.dev/reference/runtime-api#usedata
@@ -14,9 +15,13 @@ const { site, frontmatter, params } = data;
   <div v-if="frontmatter.home">
     <Home />
   </div>
+  <div v-else-if="frontmatter.type === 'storyblok'">
+    <Storyblok />
+  </div>
   <div class="app-root" v-else>
     <main>
       <article>
+        <h1>Default 😭</h1>
         <Content />
       </article>
     </main>

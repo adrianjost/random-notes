@@ -6,8 +6,5 @@
     "dev": "vitepress dev src/",
     "build": "vitepress build src/",
     "preview": "vitepress preview src/"
-  },
-  "dependencies": {
-    "@picocss/pico": "^1.5.7"
   }
 }
