@@ -33,7 +33,7 @@ Then I stumbled over the [Accell](https://www.accellww.com/products/usb-c-to-hdm
 <img alt="Screentshot of the Accell Adapter's product page, showing the USB-C and HDMI interface with the special anchor screw." src="https://aridbtumen.cloudimg.io/v7/image-store.adrianjost.dev/img/16193542044723675133134339537122.png">
 <figcaption>
     Screenshot of the 
-    <ALink href="https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled">
+    <ALink href="https://web.archive.org/web/20230129154243/https://www.accellww.com/products/usb-c-to-hdmi-2-0-adapter-cec-enabled">
     Accell Adapter's product page.
     </ALink>
   </figcaption>
